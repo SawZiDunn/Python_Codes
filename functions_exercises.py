@@ -19,11 +19,12 @@ def find_smallest():
 
 def future_investment():
     deposit = eval(input("How much is your deposit now?"))
-    interest_rate = eval(input("Put the interest rate:"))
-    n=eval(input("How many years will you wait?"))
+
+    interest_rate = eval(input("Put the interest rate in percent:"))
+    n = eval(input("How many years will you wait?"))
 
     for i in range(n):
-        deposit = deposit+(deposit/100*interest_rate)
+        deposit = deposit+(deposit*(interest_rate/100))
         print(deposit)
     print("Total_Deposit =", deposit)
 
@@ -114,3 +115,6 @@ def printer():
     print("Hello {name}, Welcome to {an} {num}.".format(name="ZiDunn", an="Golden Land", num=37))
 
     print("The value of c is %.2f." % c)
+
+
+future_investment()
