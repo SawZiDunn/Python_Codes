@@ -2,7 +2,7 @@ import pymongo
 import random
 
 
-connection = pymongo.MongoClient("mongodb+srv://ZiDunn:DgKSyyMopDlVQQBl@cluster0.diludbd.mongodb.net/", 27017)
+connection = pymongo.MongoClient("###", 27017) # mongo db link
 database = connection["new_db"]
 collection = database["candidate_info"]
 
