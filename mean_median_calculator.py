@@ -1,3 +1,6 @@
+import statistics
+
+
 def getnumber():
     nums = []
     xStr = input("Enter a number (<Enter> to quit)>>")
@@ -9,6 +12,7 @@ def getnumber():
 
 
 def mean(nums):
+    # statistics.mean(list)
     sum = 0.0
     for num in nums:
         sum += num
@@ -16,6 +20,7 @@ def mean(nums):
 
 
 def median(nums):
+    # statistics.median(list)
     nums.sort()
     size = len(nums)
 
@@ -27,14 +32,3 @@ def median(nums):
         rmedian = nums[midPos]
     return rmedian
 
-
-def Main():
-    lst = getnumber()
-    print(lst)
-    mean_outcome = mean(lst)
-    print(mean_outcome)
-    median_outcome = median(lst)
-    print(median_outcome)
-
-
-Main()

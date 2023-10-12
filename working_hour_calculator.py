@@ -1,5 +1,5 @@
 def work_hour():
-    employee_num=eval(input("How many employees you want to calculate?"))
+    employee_num = eval(input("How many employees you want to calculate?"))
     a=1
     a0=1
     sum=0
