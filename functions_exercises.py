@@ -56,51 +56,12 @@ def num_interpret():
     print(y)
 
 
-def exception_handling():
-    try:
-        age = int(input("Enter your age :"))
-        income = 2000
-        risk = income / age
-        print(f"Your age is {age}.")
-    except ValueError:
-        print("Invalid Value")
-    except ZeroDivisionError:
-        print("Try except Zero")
-
-
 def triangle_pattern():
     nrow = eval(input("enter number of rows: "))
     for i in range(nrow):
         for j in range(i+1):
             print(j+1, end=" ")
         print("\n")
-
-
-def is_prime(num):
-    if num < 2:
-        return False
-    else:
-        for temp in range(2, num):
-            if num % temp == 0:
-                return False
-    return True
-
-
-def next_prime(num):
-    num0 = num
-    while True:
-        num += 1
-        if is_prime(num):
-            letter = f"{num0} is no prime.\nThe next prime number is {num}."
-            return letter
-
-
-def main_prime_check():
-    num = int(input("Enter a number :"))
-    if is_prime(num):
-        return True
-    else:
-        return next_prime(num)
 
 
 def printer():
@@ -117,4 +78,4 @@ def printer():
     print("The value of c is %.2f." % c)
 
 
-future_investment()
+triangle_pattern()

@@ -3,11 +3,11 @@ def usd(thb):
 
 
 def mmk(thb):
-    print("MMK \t\t", thb//0.011, "\t\t", thb//0.016)
+    print("MMK \t\t", thb//0.011, "\t\t\t", thb//0.016)
 
 
 def jap(thb):
-    print("JAP \t\t", thb//0.2525, "\t\t", thb//0.254)
+    print("JAP \t\t", thb//0.2525, "\t\t\t", thb//0.254)
 
 
 def eur(thb):
@@ -15,12 +15,12 @@ def eur(thb):
 
 
 def cny(thb):
-    print("CNY \t\t", thb//5.23, "\t\t", thb//5.26)
+    print("CNY \t\t", thb//5.23, "\t\t\t", thb//5.26)
 
 
 def main():
     thb = eval(input("THB Currency :",))
-    print("Currency\t Buying Rate\t\t Selling Rate")
+    print("Currency\t Buying Rate\t\t\t Selling Rate")
     usd(thb)
     mmk(thb)
     jap(thb)
