@@ -5,6 +5,7 @@ def q1():
     print("C.Operating System")
     print("D.Application Program ")
 
+
 def q2():
     print("2.__________ is the brain of a computer.")
     print("A.Hardware")
@@ -12,12 +13,14 @@ def q2():
     print("C.Memory")
     print("D.Disk")
 
+
 def q3():
     print("3.The speed of the CPU may be measured in __________.")
     print("A.megabytes")
     print("B.megabytes")
     print("C.megahertz")
     print("D.megahertz")
+
 
 def q4():
     print("4.Which of the following are storage devices?")

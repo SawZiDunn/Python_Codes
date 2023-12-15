@@ -4,7 +4,7 @@ import statistics
 def getnumber():
     nums = []
     xStr = input("Enter a number (<Enter> to quit)>>")
-    while(xStr != ""):
+    while (xStr != ""):
         x = eval(xStr)
         nums.append(x)
         xStr = input("Enter a number (<Enter> to quit)>>")

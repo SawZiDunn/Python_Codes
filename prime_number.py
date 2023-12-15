@@ -1,4 +1,4 @@
-def is_prime(num):
+def is_prime(num) -> bool:  # can define the return value type like this
     if num < 2:
         return False
     else:

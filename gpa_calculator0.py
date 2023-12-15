@@ -1,6 +1,6 @@
 def irs111(credit1,grade1):
-    print("IRS111\t\t\t", credit1,"\t\t", grade1)
-    a=credit1*grade1
+    print("IRS111\t\t\t", credit1, "\t\t", grade1)
+    a = credit1*grade1
     return a
 
 

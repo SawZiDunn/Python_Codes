@@ -1,6 +1,7 @@
+import sys
+
 class Voting:
     def __init__(self):
-        print("Hello, this is the special method of voting class.")
         self.participants = {0: {"name": "Ronaldo", "votes": 0, "voters": []},
                              1: {"name": "Messi", "votes": 0, "voters": []},
                              2: {"name": "Benzema", "votes": 0, "voters": []},
@@ -17,8 +18,7 @@ class Voting:
         try:
             option = eval(input("Press 1 to register\nPress 2 to log in\nPress 3 to exit"))
 
-        except Exception as err:
-            print(err, "\n")
+        except ValueError:
             print("Please insert only integer!\n")
             self.main_option()
 
@@ -29,7 +29,7 @@ class Voting:
             self.log_in()
 
         elif option == 3:
-            exit(1)
+            sys.exit()
 
         else:
             print("Invalid Option\n")

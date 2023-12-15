@@ -1,18 +1,33 @@
 import sys
+import argparse
 
-# If you pass an argument in double quotes, python will take it as one argument
 
-if len(sys.argv) < 2:
-    sys.exit("Too few arguments...")  # exit by printing the given
-elif len(sys.argv) > 2:
-    sys.exit("Too many arguments...")
+def sample0():
+    # If you pass an argument in double quotes, python will take it as one argument
 
-print(f"Hello, my name is {sys.argv[1]}.")
+    if len(sys.argv) != 2:
+        sys.exit("Too many or too few arguments...")  # exit by printing the given
 
-# for arg in sys.argv[1:]:
-#     print("Hello, my name is", arg)
+    print(f"Hello, my name is {sys.argv[1]}.")
 
-# try:
-#     print(f"Hello, my name is {sys.argv[1]}.")
-# except Exception as err:  # IndexError
-#     print(err)
+    # try:
+    #     print(f"Hello, my name is {sys.argv[1]}.")
+    # except Exception as err:  # IndexError
+    #     print(err)
+
+
+def sample1():
+    parser = argparse.ArgumentParser(description="Meow like a cat!")
+    parser.add_argument("-n", default=1, help="number of times to meow", type=int)
+    args = parser.parse_args()
+
+    for _ in range(args.n):  # args.n is the argument after '-n'
+        print("Meow!")
+
+
+def main():
+    sample1()
+
+
+if __name__ == '__main__':
+    main()

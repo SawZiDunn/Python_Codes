@@ -12,5 +12,7 @@ with open("name.csv") as file:
 #     return student["name"]
 
 
-for student in sorted(students, key=lambda member: member["name"]):  # member's a student dictionary
+for student in sorted(students, key=lambda member: member["name"]):
+    # member's a student dictionary,also the name of
+    # the parameter passed to the lambda function
     print(student["name"], student["clan"])
