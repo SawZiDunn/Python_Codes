@@ -7,11 +7,11 @@ def unpack():
     coins1: dict = {"galleons": 100, "sickles": 50, "knuts": 25}
 
     # * for unpacking lists
-    # print(total(*coins0), "knuts")
-    # print(*coins0, sep=", ")
+    print(total(*coins0), "knuts")
+    print(*coins0, sep=", ")
 
     # ** for unpacking dicts
-    print(total(**coins1), "knuts")
+    # print(total(**coins1), "knuts")
 
 
 def f(*args, **kwargs):
@@ -20,3 +20,4 @@ def f(*args, **kwargs):
 
 
 f(galleons=100, sickles=50, knuts=25)
+unpack()

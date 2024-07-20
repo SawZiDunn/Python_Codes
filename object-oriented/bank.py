@@ -16,6 +16,7 @@ class Account:
 def main():
     account = Account()
     print("Balance:", account.balance)
+    
     account.deposit(1000)
     print("Balance:", account.balance)
     account.withdraw(80)

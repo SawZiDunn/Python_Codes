@@ -9,5 +9,3 @@ def sheep(n):
         yield "Sheep" * i  # this returns every time
 
 
-main()
-

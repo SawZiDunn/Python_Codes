@@ -30,7 +30,7 @@ def pa_th():
         print(file)
 
 
-card()
+
 
 
 

@@ -23,11 +23,7 @@ def sample1():
 
     for _ in range(args.n):  # args.n is the argument after '-n'
         print("Meow!")
-
-
-def main():
-    sample1()
-
+    
 
 if __name__ == '__main__':
-    main()
+    sample1()

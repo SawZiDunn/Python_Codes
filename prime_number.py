@@ -1,8 +1,11 @@
+import math
+
+
 def is_prime(num) -> bool:  # can define the return value type like this
     if num < 2:
         return False
     else:
-        for temp in range(2, num):
+        for temp in range(2, int(math.sqrt(num)) + 1):
             if num % temp == 0:
                 return False
     return True

@@ -2,7 +2,7 @@ import math
 
 
 def main():
-    a,b,c=eval(input("Enter the values of a, b, and c :"))
+    a, b, c = eval(input("Enter the values of a, b, and c :"))
     SquareRoot = math.sqrt(b*b-4*a*c)
     Root1=(-b+SquareRoot)/2*a
     Root2=(-b-SquareRoot)/2*a

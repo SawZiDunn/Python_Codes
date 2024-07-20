@@ -1,7 +1,7 @@
 def read0():
     # with open("name.csv", "r") as file:
     #     lines = file.readlines()  # lines is a list
-    # #  readlines() read all the lines in a file
+    # #  readlines() read all the lines in a file and keep them in a list
     #
     # for line in lines:
     #     print(line.rstrip())  # rstrip() is same with strip() except being right only
@@ -14,15 +14,17 @@ def read0():
 def read1():
     count = 0
     total = 0
-    file = input("Type the file name...")
+    file = input("Type the file name: ")
     opened_file = open(file, "r")
+
 
     # only for files with one number in each line(can have multiple lines) eg. "a.txt"
 
     for line in opened_file:  # open_file.readlines() can be used
         count = count + 1
         total += int(line)
-    print("The average is", total / count)
+    opened_file.close()
+    print("The average is", round(total / count, 2))
 
 
 def read2():
@@ -31,8 +33,6 @@ def read2():
     filepath = input("Type your file name: ")
     file = open(filepath)
     line = file.readline()  # only reads one line at a time
-
-    # basically the same with loop()
 
     while line != "":  # or while line: # while there's a line
         count = count + 1
@@ -59,4 +59,8 @@ def read3():
         line = file.readline()
     print(total)
     print("The average number is", total / count)
+    
+    
+if __name__ == "__main__":
+    read1()
 

@@ -14,8 +14,11 @@ def jump_search(my_arr, find, start, end):
 
 
 if __name__ == '__main__':
-    arr = [1, 3, 5, 6, 7, 9, 11, 15, 58]
-    to_find = 58
+
+    arr = [1, 3, 5, 6, 7, 9, 11, 15, 58, 60]
+
+    to_find = 60
+
     result = jump_search(arr, to_find, 0, len(arr) - 1)
 
     if result == -1:
